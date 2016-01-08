@@ -24,17 +24,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)onButtonPress:(id)sender {
+
+- (void)closeModalView{
     //[self dismissViewControllerAnimated:TRUE completion:Nil];
-        [self dismissViewControllerAnimated:true completion:^{
-            
-           //Enter in actions to save the data here and update the view
-        }];
-    
-    
+    [self dismissViewControllerAnimated:true completion:^{
+        
+        //Enter in actions to save the data here and update the view
+    }];
+
 }
 
 
+- (IBAction)doneButtonPressed:(id)sender {
+    
+    
+    [self closeModalView];
+    
+}
+  
 
 /*
 #pragma mark - Navigation

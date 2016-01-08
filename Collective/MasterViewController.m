@@ -19,11 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //Keeping Apple's edit button because I like the functionality and it makes sense here.
+    //This will allow me to ediit the Collective and remove items we don't want/
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
+    
+    
+    //Removing Apple's add button because I don't need them. I am adding my own from the storyboard and will map them accordingly with segue ways.
+    /*
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+    self.navigationItem.rightBarButtonItem = addButton;*/
+    
+    
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
@@ -80,6 +87,7 @@
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }
+    
     
     //O. Medina add other segues in this section
     /*
