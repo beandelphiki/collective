@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="Event">
+        <attribute name="timeStamp" optional="YES" attributeType="Date">
+            <userInfo/>
+        </attribute>
+        <userInfo/>
+    </entity>
+    <entity name="KnowledgeItemEnt" representedClassName="KnowledgeItemMO" syncable="YES">
+        <attribute name="knowledgeItemId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="knowledgeItemitemDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="knowledgeItemProblemItem" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="knowledgeItemSolutionItem" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="knowledgeItemTitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
+        <element name="KnowledgeItemEnt" positionX="261" positionY="198" width="128" height="120"/>
+    </elements>
+</model>
