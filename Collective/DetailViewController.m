@@ -7,6 +7,11 @@
 //
 
 #import "DetailViewController.h"
+#import "KnowledgeItemMO.h"
+#import "CollectiveCoreDataStack.h"
+
+
+
 
 @interface DetailViewController ()
 
@@ -28,7 +33,11 @@
 - (void)configureView {
     // Update the user interface for the detail item.
     if (self.detailItem) {
-        self.knowledgeDetailTime.text = [[self.detailItem valueForKey:@"timeStamp"] description];
+        //self.knowledgeDetailTime.text = [[self.detailItem valueForKey:@"knowledgeItemTitle"] description];
+        self.knowledgeDetailProblem.text = [[self.detailItem valueForKey:@"knowledgeItemProblemItem"]description];
+        self.knowledgeDetailSolution.text = [[self.detailItem valueForKey:@"knowledgeItemSolutionItem"]description];
+        self.knowledgeDetailTitle.text = [[self.detailItem valueForKey:@"knowledgeItemTitle"]description];
+        
     }
 }
 
@@ -43,8 +52,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (IBAction)editButtonPressed:(id)sender {
-}
 
 @end

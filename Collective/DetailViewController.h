@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) id detailItem;
 
+
 @property (weak, nonatomic) IBOutlet UILabel *knowledgeDetailTitle;
 @property (weak, nonatomic) IBOutlet UITextView *knowledgeDetailProblem;
 @property (weak, nonatomic) IBOutlet UITextView *knowledgeDetailSolution;

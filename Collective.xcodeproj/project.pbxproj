@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		350FA9FF1C3F23BC00B4D88C /* KnowledgeItemMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 350FA9FC1C3F23BC00B4D88C /* KnowledgeItemMO+CoreDataProperties.m */; };
-		350FAA001C3F23BC00B4D88C /* KnowledgeItemMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 350FA9FE1C3F23BC00B4D88C /* KnowledgeItemMO.m */; };
+		351AA51E1C443AB700E4EE18 /* CollectiveCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 351AA51D1C443AB700E4EE18 /* CollectiveCoreDataStack.m */; };
+		351AA5231C443F5A00E4EE18 /* KnowledgeItemMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 351AA5201C443F5A00E4EE18 /* KnowledgeItemMO+CoreDataProperties.m */; };
+		351AA5241C443F5A00E4EE18 /* KnowledgeItemMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 351AA5221C443F5A00E4EE18 /* KnowledgeItemMO.m */; };
 		35EB0DB01C3D9DA9006D1507 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EB0DAF1C3D9DA9006D1507 /* main.m */; };
 		35EB0DB31C3D9DA9006D1507 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EB0DB21C3D9DA9006D1507 /* AppDelegate.m */; };
 		35EB0DB61C3D9DA9006D1507 /* Collective.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35EB0DB41C3D9DA9006D1507 /* Collective.xcdatamodeld */; };
@@ -21,10 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		350FA9FB1C3F23BC00B4D88C /* KnowledgeItemMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KnowledgeItemMO+CoreDataProperties.h"; sourceTree = "<group>"; };
-		350FA9FC1C3F23BC00B4D88C /* KnowledgeItemMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KnowledgeItemMO+CoreDataProperties.m"; sourceTree = "<group>"; };
-		350FA9FD1C3F23BC00B4D88C /* KnowledgeItemMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeItemMO.h; sourceTree = "<group>"; };
-		350FA9FE1C3F23BC00B4D88C /* KnowledgeItemMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgeItemMO.m; sourceTree = "<group>"; };
+		351AA51C1C443AB700E4EE18 /* CollectiveCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectiveCoreDataStack.h; sourceTree = "<group>"; };
+		351AA51D1C443AB700E4EE18 /* CollectiveCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectiveCoreDataStack.m; sourceTree = "<group>"; };
+		351AA51F1C443F5A00E4EE18 /* KnowledgeItemMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KnowledgeItemMO+CoreDataProperties.h"; path = "../KnowledgeItemMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		351AA5201C443F5A00E4EE18 /* KnowledgeItemMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "KnowledgeItemMO+CoreDataProperties.m"; path = "../KnowledgeItemMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		351AA5211C443F5A00E4EE18 /* KnowledgeItemMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KnowledgeItemMO.h; path = ../KnowledgeItemMO.h; sourceTree = "<group>"; };
+		351AA5221C443F5A00E4EE18 /* KnowledgeItemMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KnowledgeItemMO.m; path = ../KnowledgeItemMO.m; sourceTree = "<group>"; };
 		35EB0DAB1C3D9DA9006D1507 /* Collective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collective.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35EB0DAF1C3D9DA9006D1507 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35EB0DB11C3D9DA9006D1507 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,10 +75,10 @@
 		35EB0DAD1C3D9DA9006D1507 /* Collective */ = {
 			isa = PBXGroup;
 			children = (
-				350FA9FB1C3F23BC00B4D88C /* KnowledgeItemMO+CoreDataProperties.h */,
-				350FA9FC1C3F23BC00B4D88C /* KnowledgeItemMO+CoreDataProperties.m */,
-				350FA9FD1C3F23BC00B4D88C /* KnowledgeItemMO.h */,
-				350FA9FE1C3F23BC00B4D88C /* KnowledgeItemMO.m */,
+				351AA51F1C443F5A00E4EE18 /* KnowledgeItemMO+CoreDataProperties.h */,
+				351AA5201C443F5A00E4EE18 /* KnowledgeItemMO+CoreDataProperties.m */,
+				351AA5211C443F5A00E4EE18 /* KnowledgeItemMO.h */,
+				351AA5221C443F5A00E4EE18 /* KnowledgeItemMO.m */,
 				35EB0DB11C3D9DA9006D1507 /* AppDelegate.h */,
 				35EB0DB21C3D9DA9006D1507 /* AppDelegate.m */,
 				35EB0DCB1C3D9F71006D1507 /* DetailViewEditControllerViewController.h */,
@@ -84,6 +87,8 @@
 				35EB0DB81C3D9DA9006D1507 /* MasterViewController.m */,
 				35EB0DBA1C3D9DA9006D1507 /* DetailViewController.h */,
 				35EB0DBB1C3D9DA9006D1507 /* DetailViewController.m */,
+				351AA51C1C443AB700E4EE18 /* CollectiveCoreDataStack.h */,
+				351AA51D1C443AB700E4EE18 /* CollectiveCoreDataStack.m */,
 				35EB0DBD1C3D9DA9006D1507 /* Main.storyboard */,
 				35EB0DC01C3D9DA9006D1507 /* Assets.xcassets */,
 				35EB0DC21C3D9DA9006D1507 /* LaunchScreen.storyboard */,
@@ -173,14 +178,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351AA5241C443F5A00E4EE18 /* KnowledgeItemMO.m in Sources */,
 				35EB0DBC1C3D9DA9006D1507 /* DetailViewController.m in Sources */,
-				350FA9FF1C3F23BC00B4D88C /* KnowledgeItemMO+CoreDataProperties.m in Sources */,
+				351AA51E1C443AB700E4EE18 /* CollectiveCoreDataStack.m in Sources */,
 				35EB0DB91C3D9DA9006D1507 /* MasterViewController.m in Sources */,
 				35EB0DB31C3D9DA9006D1507 /* AppDelegate.m in Sources */,
 				35EB0DB61C3D9DA9006D1507 /* Collective.xcdatamodeld in Sources */,
 				35EB0DCD1C3D9F71006D1507 /* DetailViewEditControllerViewController.m in Sources */,
+				351AA5231C443F5A00E4EE18 /* KnowledgeItemMO+CoreDataProperties.m in Sources */,
 				35EB0DB01C3D9DA9006D1507 /* main.m in Sources */,
-				350FAA001C3F23BC00B4D88C /* KnowledgeItemMO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
