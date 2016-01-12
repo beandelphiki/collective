@@ -134,7 +134,7 @@
     entry.knowledgeItemTitle = self.knowledgeDetailEditTitle.text;
     entry.knowledgeItemProblemItem = self.knowledgeDetailEditProblem.text;
     entry.knowledgeItemSolutionItem = self.knowledgeDetailEditSolution.text;
-    entry.knowledgeItemitemDate = [[NSDate date]timeIntervalSince1970];
+    entry.knowledgeItemitemDate = [[NSDate date] timeIntervalSince1970];
     
     
     //We finally save to the context.

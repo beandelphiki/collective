@@ -3,13 +3,24 @@
 //  Collective
 //
 //  Created by Orlando Medina on 1/7/16.
-//  Copyright © 2016 Medina Labs LLC Orlando Medina. All rights reserved.
+//  PLEASE SEE ATTACHED MIT LICENSE..
 //
 
 #import "KnowledgeItemMO.h"
 
 @implementation KnowledgeItemMO
+/*
+ For the headings I will be using the date from the time the item was created.
+ @Return: A string that will have the data header section
+ */
+- (NSString *)sectionName{
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:self.knowledgeItemitemDate];
+    
+    NSDateFormatter *dateFormatter =[[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"MMM yyyy"];
+    
+    return [dateFormatter stringFromDate:date];
+}
 
-// Insert code here to add functionality to your managed object subclass
 
 @end

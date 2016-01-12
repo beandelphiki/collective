@@ -2,8 +2,8 @@
 //  KnowledgeItemMO+CoreDataProperties.m
 //  Collective
 //
-//  Created by Orlando Medina on 1/7/16.
-//  Copyright © 2016 Medina Labs LLC Orlando Medina. All rights reserved.
+//  Created by Orlando Medina on 1/12/16.
+//  PLEASE SEE ATTACHED MIT LICENSE..
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
 //  to delete and recreate this implementation file for your updated model.

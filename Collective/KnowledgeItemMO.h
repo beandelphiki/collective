@@ -3,7 +3,7 @@
 //  Collective
 //
 //  Created by Orlando Medina on 1/7/16.
-//  Copyright © 2016 Medina Labs LLC Orlando Medina. All rights reserved.
+//  PLEASE SEE ATTACHED MIT LICENSE..
 //
 
 #import <Foundation/Foundation.h>
@@ -13,7 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KnowledgeItemMO : NSManagedObject
 
-// Insert code here to declare functionality of your managed object subclass
+//This is for the heading name. It should display for example for a heading JAN 2016 for the time period the entry was made.
+- (NSString *)sectionName;
 
 @end
 

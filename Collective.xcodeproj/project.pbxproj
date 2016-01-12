@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		351AA51E1C443AB700E4EE18 /* CollectiveCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 351AA51D1C443AB700E4EE18 /* CollectiveCoreDataStack.m */; };
-		351AA5231C443F5A00E4EE18 /* KnowledgeItemMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 351AA5201C443F5A00E4EE18 /* KnowledgeItemMO+CoreDataProperties.m */; };
-		351AA5241C443F5A00E4EE18 /* KnowledgeItemMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 351AA5221C443F5A00E4EE18 /* KnowledgeItemMO.m */; };
+		35DB50CC1C455EF700D47D73 /* KnowledgeItemMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DB50CB1C455EF700D47D73 /* KnowledgeItemMO+CoreDataProperties.m */; };
+		35DB50CF1C455F8100D47D73 /* KnowledgeItemMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DB50CE1C455F8100D47D73 /* KnowledgeItemMO.m */; };
 		35EB0DB01C3D9DA9006D1507 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EB0DAF1C3D9DA9006D1507 /* main.m */; };
 		35EB0DB31C3D9DA9006D1507 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EB0DB21C3D9DA9006D1507 /* AppDelegate.m */; };
 		35EB0DB61C3D9DA9006D1507 /* Collective.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35EB0DB41C3D9DA9006D1507 /* Collective.xcdatamodeld */; };
@@ -24,10 +24,10 @@
 /* Begin PBXFileReference section */
 		351AA51C1C443AB700E4EE18 /* CollectiveCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectiveCoreDataStack.h; sourceTree = "<group>"; };
 		351AA51D1C443AB700E4EE18 /* CollectiveCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectiveCoreDataStack.m; sourceTree = "<group>"; };
-		351AA51F1C443F5A00E4EE18 /* KnowledgeItemMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KnowledgeItemMO+CoreDataProperties.h"; path = "../KnowledgeItemMO+CoreDataProperties.h"; sourceTree = "<group>"; };
-		351AA5201C443F5A00E4EE18 /* KnowledgeItemMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "KnowledgeItemMO+CoreDataProperties.m"; path = "../KnowledgeItemMO+CoreDataProperties.m"; sourceTree = "<group>"; };
-		351AA5211C443F5A00E4EE18 /* KnowledgeItemMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KnowledgeItemMO.h; path = ../KnowledgeItemMO.h; sourceTree = "<group>"; };
-		351AA5221C443F5A00E4EE18 /* KnowledgeItemMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KnowledgeItemMO.m; path = ../KnowledgeItemMO.m; sourceTree = "<group>"; };
+		35DB50CA1C455EF700D47D73 /* KnowledgeItemMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KnowledgeItemMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		35DB50CB1C455EF700D47D73 /* KnowledgeItemMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KnowledgeItemMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		35DB50CD1C455F8100D47D73 /* KnowledgeItemMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeItemMO.h; sourceTree = "<group>"; };
+		35DB50CE1C455F8100D47D73 /* KnowledgeItemMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgeItemMO.m; sourceTree = "<group>"; };
 		35EB0DAB1C3D9DA9006D1507 /* Collective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collective.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35EB0DAF1C3D9DA9006D1507 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35EB0DB11C3D9DA9006D1507 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,10 +75,10 @@
 		35EB0DAD1C3D9DA9006D1507 /* Collective */ = {
 			isa = PBXGroup;
 			children = (
-				351AA51F1C443F5A00E4EE18 /* KnowledgeItemMO+CoreDataProperties.h */,
-				351AA5201C443F5A00E4EE18 /* KnowledgeItemMO+CoreDataProperties.m */,
-				351AA5211C443F5A00E4EE18 /* KnowledgeItemMO.h */,
-				351AA5221C443F5A00E4EE18 /* KnowledgeItemMO.m */,
+				35DB50CD1C455F8100D47D73 /* KnowledgeItemMO.h */,
+				35DB50CE1C455F8100D47D73 /* KnowledgeItemMO.m */,
+				35DB50CA1C455EF700D47D73 /* KnowledgeItemMO+CoreDataProperties.h */,
+				35DB50CB1C455EF700D47D73 /* KnowledgeItemMO+CoreDataProperties.m */,
 				35EB0DB11C3D9DA9006D1507 /* AppDelegate.h */,
 				35EB0DB21C3D9DA9006D1507 /* AppDelegate.m */,
 				35EB0DCB1C3D9F71006D1507 /* DetailViewEditControllerViewController.h */,
@@ -178,15 +178,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				351AA5241C443F5A00E4EE18 /* KnowledgeItemMO.m in Sources */,
 				35EB0DBC1C3D9DA9006D1507 /* DetailViewController.m in Sources */,
+				35DB50CF1C455F8100D47D73 /* KnowledgeItemMO.m in Sources */,
 				351AA51E1C443AB700E4EE18 /* CollectiveCoreDataStack.m in Sources */,
 				35EB0DB91C3D9DA9006D1507 /* MasterViewController.m in Sources */,
 				35EB0DB31C3D9DA9006D1507 /* AppDelegate.m in Sources */,
 				35EB0DB61C3D9DA9006D1507 /* Collective.xcdatamodeld in Sources */,
 				35EB0DCD1C3D9F71006D1507 /* DetailViewEditControllerViewController.m in Sources */,
-				351AA5231C443F5A00E4EE18 /* KnowledgeItemMO+CoreDataProperties.m in Sources */,
 				35EB0DB01C3D9DA9006D1507 /* main.m in Sources */,
+				35DB50CC1C455EF700D47D73 /* KnowledgeItemMO+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
