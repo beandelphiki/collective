@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Collective/DetailViewEditControllerViewController.m"
-            timestampString = "474244013.161984"
+            timestampString = "474305513.480004"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "@implementation DetailViewEditControllerViewController"
             landmarkType = "3">
          </BreakpointContent>

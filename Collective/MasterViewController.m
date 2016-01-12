@@ -3,7 +3,7 @@
 //  Collective
 //
 //  Created by Orlando Medina on 1/6/16.
-//  Copyright © 2016 Medina Labs LLC Orlando Medina. All rights reserved.
+//  PLEASE SEE ATTACHED MIT LICENSE..
 //
 
 #import "MasterViewController.h"
@@ -70,13 +70,6 @@
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }
-    
-    
-    //O. Medina add other segues in this section
-    /*
-     
-     */
-    
 }
 
 
@@ -124,15 +117,16 @@
             // Replace this implementation with code to handle the error appropriately.
             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
         }
     }
 }
+
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = [[object valueForKey:@"knowledgeItemTitle"] description];
 }
+
 
 #pragma mark - Fetched results controller
 
@@ -144,8 +138,6 @@
     
     NSFetchRequest *fetchRequest = [self KnowledgeItemFetchRequest];
     CollectiveCoreDataStack *coreDataStack = [CollectiveCoreDataStack defaultStack];
-    
-    
     
     // Edit the entity name as appropriate.
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"KnowledgeItemEnt" inManagedObjectContext:coreDataStack.managedObjectContext];
@@ -232,19 +224,5 @@
 }
 
 
-
-
-
-
-#pragma mark Apple established backup functions
-/*
-// Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed. 
- 
- - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
-    // In the simplest, most efficient, case, reload the table view.
-    [self.tableView reloadData];
-}
- */
 
 @end

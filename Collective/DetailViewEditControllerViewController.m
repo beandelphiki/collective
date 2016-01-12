@@ -9,7 +9,7 @@
 #import "DetailViewEditControllerViewController.h"
 #import "KnowledgeItemMO.h"
 #import "CollectiveCoreDataStack.h"
-
+#import "DetailViewController.h"
 
 
 @interface DetailViewEditControllerViewController ()
@@ -18,7 +18,47 @@
 
 @implementation DetailViewEditControllerViewController
 
+
+/*
+ Let's handle the detailItemObj and make sure we handle any odd changes.
+ */
+
+- (void)setDetailItemObj:(id)newDetailItemObj {
+    if (_detailItemObj != newDetailItemObj) {
+        _detailItemObj = newDetailItemObj;
+        
+        // Update the view.
+        [self configureView];
+    }
+}
+
+
+
+
+/*
+ This fxn sets up the fields on the view with the items we pulled from the segue.
+ */
+- (void)configureView {
+    // Update the user interface for the knowledge item so we can see it on screen.
+    if (self.detailItemObj) {
+        self.knowledgeDetailEditProblem.text = [[self.detailItemObj valueForKey:@"knowledgeItemProblemItem"]description];
+        self.knowledgeDetailEditSolution.text = [[self.detailItemObj valueForKey:@"knowledgeItemSolutionItem"]description];
+        self.knowledgeDetailEditTitle.text = [[self.detailItemObj valueForKey:@"knowledgeItemTitle"]description];
+    }
+    
+}
+
+
+
+
+
 - (void)viewDidLoad {
+    
+    if(self.detailItemObj != nil){
+        [self configureView];
+    }
+    
+
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -40,29 +80,50 @@
 
 
 
-
-/*
- @TODO: Rewrite the functionality of this to open up my seague and create a new item.
- */
-
-- (void) updateDiaryEntry {
-    //Capture all of the entries from the GUI and grab the values with the exception of the date field. We update that every time.
-    self.entry.knowledgeItemTitle = self.knowledgeDetailEditTitle.text;
-    self.entry.knowledgeItemProblemItem = self.knowledgeDetailEditProblem.text;
-    self.entry.knowledgeItemSolutionItem = self.knowledgeDetailEditSolution.text;
-    self.entry.knowledgeItemitemDate = [[NSDate date]timeIntervalSince1970];
+- (void) updateKnowledgeEntry {
     
-    
-    //Call the default stack so we can use it and save to it.
+    //Call the default stack so we can use it so we can access and save to it.
     CollectiveCoreDataStack* coreDataStack = [CollectiveCoreDataStack defaultStack];
     
-    //Finally save to it.
+
+    
+    //Perform a search to see if the item exists.
+    NSFetchRequest* fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"KnowledgeItemEnt"];
+    
+    NSString *attributeID  = @"knowledgeItemTitle";
+    NSPredicate *predMatch   = [NSPredicate predicateWithFormat:@"%K == %@",
+                                attributeID, [[self.detailItemObj valueForKey:@"knowledgeItemTitle"]description]];
+    [fetchRequest setFetchLimit:1];  //Let's limit it to 1 item.
+    [fetchRequest setPredicate:predMatch]; //Let's setup the predicate for the where clause we added.
+    
+    
+    
+    NSError * error = nil;
+    //Store the result in an array
+    NSArray* searchResult = [coreDataStack.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+   
+    
+    
+    if (searchResult !=nil){
+     KnowledgeItemMO* item = [searchResult objectAtIndex:0];
+        NSLog(@"TITLE FOR THE FOUND OBJECT IS: %@", item.knowledgeItemTitle);
+        item.knowledgeItemTitle= self.knowledgeDetailEditTitle.text;
+        item.knowledgeItemProblemItem = self.knowledgeDetailEditProblem.text;
+        item.knowledgeItemSolutionItem = self.knowledgeDetailEditSolution.text;
+    }
+    else{
+        NSLog(@"NOT FOUND");
+    }
+    
+    
+    
+       //Finally save the changes
     [coreDataStack saveContext];
 
 }
 
 
-- (void) insertDiaryEntry{
+- (void) insertKnowledgeEntry{
     
     
     
@@ -85,14 +146,17 @@
 
 
 - (IBAction)doneButtonPressed:(id)sender {
-    if (self.entry != nil){
-        [self updateDiaryEntry];
+    
+    
+    if (self.detailItemObj != nil){
+        [self updateKnowledgeEntry];
     }
     
+    
+    
     else{
-        [self insertDiaryEntry];
+        [self insertKnowledgeEntry];
     }
-
     
     [self closeModalView];
     

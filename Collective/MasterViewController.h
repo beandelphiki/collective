@@ -3,7 +3,7 @@
 //  Collective
 //
 //  Created by Orlando Medina on 1/6/16.
-//  Copyright © 2016 Medina Labs LLC Orlando Medina. All rights reserved.
+//  PLEASE SEE ATTACHED MIT LICENSE..
 //
 
 #import <UIKit/UIKit.h>
@@ -14,10 +14,8 @@
 @interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
-
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-
 
 @end
 

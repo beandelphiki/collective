@@ -3,7 +3,7 @@
 //  Collective
 //
 //  Created by Orlando Medina on 1/11/16.
-//  Copyright © 2016 Medina Labs LLC Orlando Medina. All rights reserved.
+//  PLEASE SEE ATTACHED MIT LICENSE..
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
 //  to delete and recreate this implementation file for your updated model.

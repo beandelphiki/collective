@@ -3,7 +3,7 @@
 //  Collective
 //
 //  Created by Orlando Medina on 1/11/16.
-//  Copyright © 2016 Medina Labs LLC Orlando Medina. All rights reserved.
+//  PLEASE SEE ATTACHED MIT LICENSE..
 //
 
 #import "KnowledgeItemMO.h"
@@ -12,6 +12,7 @@
 
 /*
  For the headings I will be using the date from the time the item was created.
+ @Return: A string that will have the data header section
  */
 - (NSString *)sectionName{
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:self.knowledgeItemitemDate];

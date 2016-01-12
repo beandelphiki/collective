@@ -3,27 +3,33 @@
 //  Collective
 //
 //  Created by Orlando Medina on 1/6/16.
-//  Copyright © 2016 Medina Labs LLC Orlando Medina. All rights reserved.
+//  PLEASE SEE ATTACHED MIT LICENSE..
 //
 
 #import <UIKit/UIKit.h>
 @class KnowledgeItemMO;
-
+@class DetailViewController;
 
 
 @interface DetailViewEditControllerViewController : UIViewController
+
+@property (strong, nonatomic) id detailItemObj;
+
+
+
+/*
+ doneButton: This is wired up to the GUI so we can detect what to do with the button.
+ knowledgeDetailEditTitle: This is the wired up Title.
+ knowledgeDetailEditProblem: This is the wired up Problem text view area
+ knowledgeDetailEditSolution: This is the wired up Solution text view area
+ 
+ */
 @property (weak, nonatomic) IBOutlet UIButton *doneButton;
 @property (weak, nonatomic) IBOutlet UITextField *knowledgeDetailEditTitle;
 @property (weak, nonatomic) IBOutlet UITextView *knowledgeDetailEditProblem;
 @property (weak, nonatomic) IBOutlet UITextView *knowledgeDetailEditSolution;
 
 
-#pragma  mark Add in the reference to the CoreData item here so we can start adding information to it.
-/*-----
-Bringing in a KnowledgeItem Entry so we can start adding data to our context and persisting it.
-------*/
-
-@property (nonatomic,strong)KnowledgeItemMO* entry;
 
 
 

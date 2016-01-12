@@ -3,7 +3,7 @@
 //  Collective
 //
 //  Created by Orlando Medina on 1/11/16.
-//  Copyright © 2016 Medina Labs LLC Orlando Medina. All rights reserved.
+//  PLEASE SEE ATTACHED MIT LICENSE..
 //
 
 #import "CollectiveCoreDataStack.h"
@@ -95,8 +95,7 @@
         dict[NSLocalizedFailureReasonErrorKey] = failureReason;
         dict[NSUnderlyingErrorKey] = error;
         error = [NSError errorWithDomain:@"YOUR_ERROR_DOMAIN" code:9999 userInfo:dict];
-        // Replace this with code to handle the error appropriately.
-        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+    
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 
     }
@@ -139,7 +138,7 @@
     if (managedObjectContext != nil) {
         NSError *error = nil;
         if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
-            // Replace this implementation with code to handle the error appropriately.
+
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         }
     }
